@@ -19,11 +19,12 @@ export default defineConfig({
 
 		sidebar: [
 			{ text: "Getting started", link: "/docs", },
-			{ text: "Properties", link: "/docs/properties", },
 			{ text: "Types", link: "/docs/types" },
+			{ text: "Properties", link: "/docs/properties", },
+			{ text: "Objects", link: "/docs/objects", },
+			{ text: "Structured objects", link: "/docs/structured-objects" },
 			{ text: "Enums", link: "/docs/enums" },
 			{ text: "Flags", link: "/docs/flags" },
-			{ text: "Structured objects", link: "/docs/structured-objects" },
 			{ text: "Rails integration", link: "/docs/rails" }
 		],
 
