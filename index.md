@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /setup/
+      link: /docs/
 
 features:
   - title: Properties
