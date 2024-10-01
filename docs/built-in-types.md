@@ -99,7 +99,7 @@ For example, this type:
 _Map(name: String, age: Integer)
 ```
 
-Will check that `[name]` matches `String` and `[age]` matches `Integer`.
+Will check that `[:name]` matches `String` and `[:age]` matches `Integer`.
 
 ### `_Never`
 
