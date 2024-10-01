@@ -149,8 +149,8 @@ The index allows you to use `where` for exact-match values.
 Color.where(lower_hex: "0000ff") # => [Color::Blue]
 ```
 
-If the index is *unique*, you can use `find` for exact-match values.
+If the index is *unique*, you can use `find_by` for exact-match values.
 
 ```ruby
-Color.find(lower_hex: "0000ff") # => Color::Blue
+Color.find_by(lower_hex: "0000ff") # => Color::Blue
 ```
