@@ -60,3 +60,11 @@ Matches if the object is frozen and matches the type `T`.
 ### `_Hash(K, V)`
 
 Matches if the object is a `Hash` where all keys match the type `K` and all values match the type `V`.
+
+### `_Integer(T)`
+
+Matches if the object is an `Integer` and also matches the type `T`.
+
+```ruby
+_Integer(18..)
+```
