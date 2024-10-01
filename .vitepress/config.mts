@@ -20,6 +20,7 @@ export default defineConfig({
 		sidebar: [
 			{ text: "Getting started", link: "/docs", },
 			{ text: "Types", link: "/docs/types" },
+			{ text: "Built in types", link: "/docs/built-in-types" },
 			{ text: "Properties", link: "/docs/properties", },
 			{ text: "Objects", link: "/docs/objects", },
 			{ text: "Structured objects", link: "/docs/structured-objects" },
