@@ -1,2 +1,6 @@
 
-# Getting Started
+# Getting started
+
+```bash
+bundle add literal
+```
