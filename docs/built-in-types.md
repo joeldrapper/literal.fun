@@ -3,6 +3,8 @@
 
 `Literal::Types` defines a number of built-in types that you can use. This module is included in `Literal::Properties`, `Literal::Object`, `Literal::Struct` and `Literal::Data` already.
 
+Once you’ve created a type — which usually happens at boot time when a class is defined — you can use it as many times as you like with no runtime allocations.
+
 ### `_Any`
 
 Matches any object apart from `nil`.
