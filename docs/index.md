@@ -1,3 +1,8 @@
+---
+next:
+  text: 'Types'
+  link: '/docs/types'
+---
 
 # Getting started
 
