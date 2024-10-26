@@ -1,0 +1,10 @@
+:root {
+	--vp-c-brand-1: rgb(255, 79, 161);
+	--vp-c-brand-2: rgb(255, 79, 161);
+	--vp-button-brand-bg: rgb(255, 79, 161);
+	--vp-button-brand-hover-bg: rgb(255, 79, 161);
+}
+
+body {
+	font-size: 1.1em;
+}

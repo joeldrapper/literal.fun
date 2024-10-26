@@ -14,11 +14,11 @@ export default defineConfig({
 
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Docs", link: "/docs" }
+			{ text: "Docs", link: "/docs/" }
 		],
 
 		sidebar: [
-			{ text: "Getting started", link: "/docs", },
+			{ text: "Getting started", link: "/docs/", },
 			{ text: "Types", link: "/docs/types" },
 			{ text: "Built in types", link: "/docs/built-in-types" },
 			{ text: "Properties", link: "/docs/properties", },

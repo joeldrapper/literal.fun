@@ -15,6 +15,10 @@ Here, we defined an enum `Color` with three members: `Red`, `Green`, and `Blue`.
 
 You must specify each value by hand because Enums are usually serialized and stored in a database by their value. If we were to automatically assign values, the order of the members would be significant, and simply changing the order would break things.
 
+::: tip
+If you’re using TruffleRuby, you will need to call `__after_defined__` at the end of your enum class, since TruffleRuby doesn’t support `end` TracePoints.
+:::
+
 ## Enumeration methods
 
 Enums have a few class methods to help you work with them.

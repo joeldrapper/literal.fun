@@ -3,6 +3,13 @@
 
 Literal has two structured object classes that you can inherit from: `Literal::Struct` and `Literal::Data`. These are similar to Ruby’s built in `Struct` and `Data` classes in that `Literal::Struct` is mutable while `Literal::Data` is immutable.
 
+```ruby
+class User < Literal::Struct
+  prop :name, String
+  prop :age, _Integer(13..)
+end
+```
+
 ### Marshallable
 
 Both are marshallable, meaning they can be serialized and deserialized using Ruby’s built-in `Marshal` module.

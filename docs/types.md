@@ -1,39 +1,40 @@
 
-# Literal types
+# Literal Ruby types
 
-In Literal, a type is any object that responds to `===` (tripple-equals case equality) with a *truthy* or *falsy* value. Pretty much every object in Ruby is already a type.
+In Ruby, a type is any object that responds to `===` (tripple-equals case equality) with a *truthy* or *falsy* value. Pretty much every object in Ruby is already a type.
 
-For example, *classes* typically respond to `===` by checking if the given object is an instance of the class or a subclass of it.
+For example, Ruby classes respond to `===` by checking if the given object is an instance of the class or an instance of a subclass of the class.
 
 ```ruby
 String === "Hello" # => true
 String === 42 # => false
 ```
 
-Objects typically respond to `===` by checking if the given object is an equivalent object, it’s often essentially an alias for `==` (double-equals).
+Objects typically respond to `===` by checking if the given object is an equivalent object, it’s essentially an alias of `==` (double-equals):
 
 ```ruby
 "Hello" === "Hello" # => true
 "Hello" === "World" # => false
 ```
 
-The `===` method on a Range will check if the given object is within the range.
+The `===` method on a Range will check if the given object is within the range:
 
 ```ruby
 (1..10) === 5 # => true
 (1..10) === 15 # => false
 ```
 
-And Procs alias `===` to `call`.
+Procs alias `===` to `call`:
 
 ```ruby
 is_even = proc { |it| it % 2 == 0 }
 is_even === 42 # => true
+is_even === 21 # => false
 ```
 
 ## How Ruby uses types
 
-Ruby uses these types in a few different ways already. For example, in a `case` statement, Ruby will use the `===` method of each object to determine if it matches the case.
+Ruby uses these types in a few different ways already. For example, in a `case` statement, Ruby will use the `===` method of each case to determine if it matches the case.
 
 ```ruby
 case 42
@@ -44,7 +45,7 @@ when Integer
 end
 ```
 
-The above case statement is essentially equivalent to the following.
+The above case statement is essentially equivalent to the following:
 
 ```ruby
 object = 42
@@ -67,7 +68,7 @@ in Array[Integer]
 end
 ```
 
-The above pattern matching is essentially equivalent to the following.
+The above pattern matching is essentially equivalent to the following:
 
 ```ruby
 object = [42]
@@ -89,9 +90,9 @@ Ruby also uses types for methods on Arrays:
 [1, "2", 3].any?(Integer) # true
 ```
 
-The methods `all?` and `any?` determine if all or any of the elements in the array match the given type by calling its `===` method.
+The methods `all?` and `any?` determine if all or any of the elements in the array match the given type by calling its `===` method. This is more efficient than passing a block and (depending on the type) usually avoids object allocations.
 
-## Generics
+## What about generics?
 
 If a type is any object that responds to `===`, then we can create generic functions that generate parameterized types.
 
@@ -105,7 +106,7 @@ def _Array(type)
 end
 ```
 
-Now we can use this generic function like so:
+Now we can use this generic function, passing it a type:
 
 ```ruby
 _Array(String) === [1, 2, 3] # false

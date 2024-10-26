@@ -1,17 +1,11 @@
----
-next:
-  text: 'Types'
-  link: '/docs/types'
----
-
 # Getting started
 
-Literal is still in development. If you want to try it out in your project today, you can install it directly from GitHub.
+If you want to try Literal out, you can install the release candidate.
 
-Add the following to your Gemfile.
+Add the following to your Gemfile:
 
 ```ruby
-gem "literal", git: "https://github.com/joeldrapper/literal.git"
+gem "literal", "~> 1.0.0.rc1
 ```
 
 Then run `bundle install`.

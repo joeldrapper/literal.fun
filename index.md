@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Literal <span style='font-size: 0.5em'>(pre release)</span>"
-  text: "Runtime types and type-checking for Ruby."
-  tagline: “A literal gem”.
+  name: "Literal"
+  text: "Runtime type-checking for Ruby."
+  tagline: Enums, properties, generics, structured objects.
   actions:
     - theme: brand
       text: Get started
@@ -21,7 +21,7 @@ features:
   - title: Enums
     icon: 🔢
     details: Enumerated types that feel native with runtime type-checking.
-  - title: Structured Objects
+  - title: Structured objects
     icon: 🏗️
     details: Serializable structured objects with runtime type-checking.
 ---
