@@ -10,6 +10,6 @@ class Person < Literal::Object
 end
 ```
 
-This is exactly the same as defining a regular class an extending `Literal::Properties` except you can do it on one line.
+This is the same as defining a regular class and extending `Literal::Properties` except you can do it on one line.
 
 If you need to subclass something else, such as `Phlex::HTML`, just extend `Literal::Properties` instead.
