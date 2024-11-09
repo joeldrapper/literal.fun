@@ -6,7 +6,7 @@ This features is not yet released. You can see the current in-progress implement
 
 The `_Array(T)` type can be used to check that an object is an `Array` and all of its elements match the type `T`, but after checking that, there’s nothing to prevent you from unintentionally inserting an invalid element.
 
-Using `_Array(T)` is a good start, but you take take things further. `Literal::Array(T)` is an object that behaves like an `Array` but continues to maintain the type `T` throughout its lifetime.
+Using `_Array(T)` is a good start, but you can take take things further. `Literal::Array(T)` is an object that behaves like an `Array` but continues to maintain the type `T` throughout its lifetime.
 
 ## Creating a Literal array
 
