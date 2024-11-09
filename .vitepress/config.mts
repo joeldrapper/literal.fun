@@ -14,19 +14,20 @@ export default defineConfig({
 
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Docs", link: "/docs/" }
+			{ text: "Docs", link: "/docs/" },
 		],
 
 		sidebar: [
-			{ text: "Getting started", link: "/docs/", },
+			{ text: "Getting started", link: "/docs/" },
 			{ text: "Types", link: "/docs/types" },
 			{ text: "Built in types", link: "/docs/built-in-types" },
-			{ text: "Properties", link: "/docs/properties", },
-			{ text: "Objects", link: "/docs/objects", },
+			{ text: "Properties", link: "/docs/properties" },
+			{ text: "Objects", link: "/docs/objects" },
 			{ text: "Structured objects", link: "/docs/structured-objects" },
 			{ text: "Enums", link: "/docs/enums" },
 			{ text: "Flags", link: "/docs/flags" },
-			{ text: "Rails integration", link: "/docs/rails" }
+			{ text: "Arrays", link: "/docs/array" },
+			{ text: "Rails integration", link: "/docs/rails" },
 		],
 
 		socialLinks: [
