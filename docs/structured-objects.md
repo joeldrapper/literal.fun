@@ -16,7 +16,7 @@ Both are marshallable, meaning they can be serialized and deserialized using Rub
 
 ### Hash-like
 
-Both are hash-like, meaning they can be used in place of a hash in some cases. You can access there properties using the `[]` method. `Literal::Struct` also supports `[]=` to set properties.
+Both are hash-like, meaning they can be used in place of a hash in some cases. You can access their properties using the `[]` method. `Literal::Struct` also supports `[]=` to set properties.
 
 ### Hash equality
 
