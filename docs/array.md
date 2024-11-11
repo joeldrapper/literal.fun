@@ -30,7 +30,7 @@ When mapping a `Literal::Array(T)`, you need to pass in the type for the new Lit
 array = Literal::Array(String).new("Hello", "World")
 
 mapped = array.map(Integer) do |it|
-  it.to_i * 10
+  it.length * 10
 end
 ```
 
