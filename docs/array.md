@@ -35,3 +35,18 @@ end
 ```
 
 `mapped` here will be a `Literal::Array(Integer)` and will have checked the types of each element in the mapping. An invalid mapping will raise a `Literal::TypeError`.
+
+If you map from one basic type to another basic type using a Symbol proc, literal may be able to skip the type check.
+
+```ruby
+array = Literal::Array(String).new("Hello", "World")
+mapped = array.map(Integer, &:length)
+```
+
+In this example, Literal can see that `&:length` will call `#length` on a`String` and it knows that method always returns an `Integer`.
+
+## Covariance
+
+If both types are modules (or classes), `Literal::Array` generics support covariance. This means a `Literal::Array(Integer)` is a subtype of `Literal::Array(Numeric)`.
+
+Beyond basic module and classes, some of Literal’s built in types support covariance and we’re working on adding more. For example, `Literal::Array(true)` is a subtype of `Literal::Array(_Boolean)`.
