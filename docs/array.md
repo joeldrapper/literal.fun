@@ -36,14 +36,14 @@ end
 
 `mapped` here will be a `Literal::Array(Integer)` and will have checked the types of each element in the mapping. An invalid mapping will raise a `Literal::TypeError`.
 
-If you map from one basic type to another basic type using a Symbol proc, literal may be able to skip the type check.
+If you map from one basic type to another basic type using a Symbol proc, Literal may be able to skip the type check.
 
 ```ruby
 array = Literal::Array(String).new("Hello", "World")
 mapped = array.map(Integer, &:length)
 ```
 
-In this example, Literal can see that `&:length` will call `#length` on a`String` and it knows that method always returns an `Integer`.
+In this example, Literal can see that `&:length` will call `#length` on a `String` and it knows that method always returns an `Integer`.
 
 ## Covariance
 
