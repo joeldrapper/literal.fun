@@ -1,7 +1,7 @@
 
 # Literal Ruby types
 
-In Ruby, a type is any object that responds to `===` (tripple-equals case equality) with a *truthy* or *falsy* value. Pretty much every object in Ruby is already a type.
+In Ruby, a type is any object that responds to `===` (triple-equals case equality) with a *truthy* or *falsy* value. Pretty much every object in Ruby is already a type.
 
 For example, Ruby classes respond to `===` by checking if the given object is an instance of the class or an instance of a subclass of the class.
 
