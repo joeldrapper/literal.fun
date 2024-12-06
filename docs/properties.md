@@ -73,3 +73,11 @@ You can also specify that Literal should generate attribute readers/writers for 
 ```ruby
 prop :name, String, reader: :public, writer: :protected
 ```
+## Default values
+
+Properties can have defaults that are either `Proc`s or frozen objects.
+
+```ruby
+prop :first_name, String, default: -> { "John" }
+prop :last_name, String, default: "Doe".freeze
+```
