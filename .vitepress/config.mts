@@ -18,7 +18,8 @@ export default defineConfig({
 		],
 
 		sidebar: [
-			{ text: "Getting started", link: "/docs/" },
+			{ text: "Introduction", link: "/docs/" },
+			{ text: "Getting started", link: "/docs/getting-started" },
 			{ text: "Types", link: "/docs/types" },
 			{ text: "Built in types", link: "/docs/built-in-types" },
 			{ text: "Properties", link: "/docs/properties" },

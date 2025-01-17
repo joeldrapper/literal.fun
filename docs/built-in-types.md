@@ -1,4 +1,3 @@
-
 # Built in types
 
 `Literal::Types` defines a number of built-in types that you can use. This module is included in `Literal::Properties`, `Literal::Object`, `Literal::Struct` and `Literal::Data` already.
@@ -58,6 +57,14 @@ _Constraint(Person, name: String)
 ## `_Constraint?(*T, **K)`
 
 `_Nilable(_Constraint?(*T, **K))`.
+
+## `_Date(*T, **K)`
+
+`_Constraint(Date, *T, **K)`
+
+## `_Date?(*T, **K)`
+
+`_Nilable(_Date(*T, **K))`
 
 ## `_Descendant(T)`
 
@@ -149,7 +156,7 @@ Matches any object that could have been parsed out from JSON, i.e. it came from 
 
 ## `_Lambda`
 
-Matches a `Proc` where the `lambda?` predicate is *truthy*.
+Matches a `Proc` where the `lambda?` predicate is _truthy_.
 
 ## `_Lambda?`
 
@@ -221,7 +228,6 @@ If you don’t need to apply any constraints, you should just use `String`.
 
 `_Nilable(_String(*T, **K))`.
 
-
 ## `_Symbol(*T, **K)`
 
 Matches if the object is a `Symbol` and all of the given `T` types match and the object responds to each `K` key matching the corresponding type. Similar to `_Constraint` but specifically for symbols.
@@ -229,6 +235,14 @@ Matches if the object is a `Symbol` and all of the given `T` types match and the
 ## `_Symbol?(*T, **K)`
 
 `_Nilable(_Symbol(*T, **K))`.
+
+## `_Time(*T, **K)`
+
+`_Constraint(Time, *T, **K)`
+
+## `_Time?(*T, **K)`
+
+`_Nilable(_Time(*T, **K))`
 
 ## `_Truthy`
 
