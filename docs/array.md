@@ -1,7 +1,7 @@
 # Literal arrays <Badge type="warning">edge</Badge>
 
 ::: tip
-This features is not yet released. You can see the current in-progress implementation [here](https://github.com/joeldrapper/literal/blob/main/lib/literal/array.rb) and follow the issue [here](https://github.com/joeldrapper/literal/issues/134). Contributions are very welcome.
+This feature is not yet released. You can see the current in-progress implementation [here](https://github.com/joeldrapper/literal/blob/main/lib/literal/array.rb) and follow the issue [here](https://github.com/joeldrapper/literal/issues/134). Contributions are very welcome.
 :::
 
 The `_Array(T)` type can be used to check that an object is an `Array` and all of its elements match the type `T`, but after checking that, there’s nothing to prevent you from unintentionally inserting an invalid element.
