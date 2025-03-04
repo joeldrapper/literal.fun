@@ -6,9 +6,7 @@ Literal plays a similar role to the `dry-rb` family of gems, but there are a num
 
 dry-rb types are objects that encapsulate not just a type but also a default value, fallback value, coercion strategy and failure strategy.
 
-A type is a rule that predicates a value’s membership in a set. In my view, it has no business with coercion or default values. dry-rb types are not just types, they are something else combined with types.
-
-All this is to say that it’s quite difficult to do a direct comparison between dry-rb and Literal types since in Literal, a type is just an interface. Any object that responds to `===(object)` with a _booleanish_ return value is a type predicated by that method.
+It’s quite difficult to do a direct comparison between dry-rb and Literal types since in Literal, a type is just an interface. Any object that responds to `===(object)` with a _booleanish_ return value is a type predicated by that method.
 
 ### Literal types are native to Ruby
 
