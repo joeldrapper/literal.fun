@@ -58,19 +58,7 @@ A type constructor or _generic_ is just a function that returns a type. The func
 
 ### Literal types are highly optimized
 
-All built-in type constructors are highly optimized and designed to do zero allocations at check time. Additionally, some types use tricks to optimise performance without sacrificing correctness.
-
-Union types for example are used to combine other types into a single “or” type. The type `_Union(Integer, Float)` means the object must either by an `Integer` or a `Float`. It does this by first calling `===` on `Integer` and failing that, it calls `===` on `Float`.
-
-But you can also use `_Union` to combine multiple unit types, e.g.
-
-```ruby
-Position = _Union(:top, :right, :bottom, :left)
-```
-
-When the union includes primitive unit types like these symbols, it can take advantage of the fact that their `===` is known to behave the same as their hash equality `eql?`. And this means it can use a hash map to do a quick `O(1)` lookup.
-
-You could have a union with a hundred million primitive unit types and it would be almost as fast as checking a single unit type.
+All built-in type constructors are highly optimized and designed to do zero allocations at check-time. Additionally, some types use tricks to optimise performance without sacrificing correctness. For example, a union type uses a hash map to optimise type checking when some of its types are primitive unit types.
 
 ## Properties
 
