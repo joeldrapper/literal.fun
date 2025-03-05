@@ -29,6 +29,7 @@ export default defineConfig({
 			{ text: "Flags", link: "/docs/flags" },
 			{ text: "Arrays", link: "/docs/array" },
 			{ text: "Rails integration", link: "/docs/rails" },
+			{ text: "Example types", link: "/docs/example-types" },
 		],
 
 		socialLinks: [
