@@ -56,9 +56,7 @@ AdultAge = _Integer(18..122)
 This matches most valid email addresses. [Source](https://www.regular-expressions.info/email.html)
 
 ```ruby
-EmailAddressString = _String(
-  /\A[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\z/i
-)
+EmailAddressString = _String(URI::MailTo::EMAIL_REGEXP)
 ```
 
 ## Red-green-blue color
