@@ -8,12 +8,6 @@ Matches strings that are not empty.
 PopulatedString = _String(length: 1..)
 ```
 
-## Populated array
-
-```ruby
-PopulatedArray = _Array(size: 1..)
-```
-
 ## Numeric constraints
 
 ```ruby
