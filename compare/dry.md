@@ -38,7 +38,6 @@ Literal types have only the one interface, but you can compose type constructors
 ```ruby
 MyType = _Nilable(
   _String(
-    start_with?: "h",
     length: 5..10
   )
 )
@@ -49,8 +48,7 @@ How many types do you see? Let’s start at the top:
 1. `MyType` is a type, or at least it will be after this constant assignment.
 2. `_Nilable` is a type constructor that takes a type argument and returns a new type that can be either that type or `nil`.
 3. `_String` is a type constructor that takes constraints and returns a new type that must be a String and must match those constraints.
-4. `"h"` is a type. The `_String` type calls the method `start_with?` on the object and then uses the `===` method on the unit type `"h"` to confirm that the string starts with `"h"`.
-5. `5..10` is a type. The `_String` type calls the method `length` on the object and then uses the `===` method on the range type `5..10` to confirm that the string’s length is between `5` and `10`.
+4. `5..10` is a type. The `_String` type calls the method `length` on the object and then uses the `===` method on the range type `5..10` to confirm that the string’s length is between `5` and `10`.
 
 ::: tip
 A type constructor or _generic_ is just a function that returns a type. The function can take arguments and return a type parameterized by those arguments.
