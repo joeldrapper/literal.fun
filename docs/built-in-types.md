@@ -54,12 +54,6 @@ This, for example, will check that the object is a `Person`, then it will call `
 _Constraint(Person, name: String)
 ```
 
-You can also pass arguments:
-
-```ruby
-_String(_Constraint(start_with?: "/"))
-```
-
 ## `_Constraint?(*T, **K)`
 
 `_Nilable(_Constraint?(*T, **K))`.
