@@ -81,3 +81,20 @@ Properties can have defaults that are either `Proc`s or frozen objects.
 prop :first_name, String, default: -> { "John" }
 prop :last_name, String, default: "Doe".freeze
 ```
+
+## Initializers
+
+When you use properites, Literal will define an initializer that processes the properties you've defined. This means you cannot define your own `initialize` method directly, as it would conflict with the generated one. However, Literal provides an `after_initialize` hook that you can use to perform custom initialization logic after the properties have been set.
+
+```ruby
+class Person
+  extend Literal::Properties
+
+  prop :name, String
+  prop :age, Integer
+  
+  def after_initialize
+    @name = @name.strip
+  end
+end
+```
