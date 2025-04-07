@@ -94,7 +94,7 @@ class Person
   prop :age, Integer
   
   def after_initialize
-    @name = @name.strip
+    # Initialization logic
   end
 end
 ```
