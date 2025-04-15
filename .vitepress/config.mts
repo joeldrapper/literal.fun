@@ -34,7 +34,6 @@ export default defineConfig({
 
 		socialLinks: [
 			{ icon: "github", link: "https://github.com/joeldrapper/literal" },
-			{ icon: "discord", link: "https://discord.gg/vxCFEcd2vn" },
 		],
 
 		footer: {
