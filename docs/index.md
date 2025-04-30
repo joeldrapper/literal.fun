@@ -17,4 +17,4 @@ class Name < Literal::Data
 end
 ```
 
-If a `Name` object is initialized without raising a `TypeError`, we know the `first` and `last` properties are strings and their length is 1 or more characters. We also know that the `full` method with combine those properties into a new string. If there was a typo in `full` — say we typed `@frst` instead of `@first`, this would be caught by Strict Ivars and raise a `NameError`.
+If a `Name` object is initialized without raising a `TypeError`, we know the `first` and `last` properties are strings and their length is 1 or more characters. We also know that the `full` method will combine those properties into a new string. If there was a typo in `full` — say we typed `@frst` instead of `@first`, this would be caught by Strict Ivars and raise a `NameError`.
