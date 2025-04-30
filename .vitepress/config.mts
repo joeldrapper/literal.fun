@@ -39,7 +39,7 @@ export default defineConfig({
 		footer: {
 			message: "Released under the MIT License.",
 			copyright:
-				'Made by <a href="https://github.com/joeldrapper">Joel Drapper</a>, <a href="https://github.com/stevegeek">Stephen Ierodiaconou</a> and dozens of other <a href="https://github.com/joeldrapper/literal/graphs/contributors">contributors</a>.',
+				'Made by <a href="https://joel.drapper.me">Joel Drapper</a>, <a href="https://github.com/stevegeek">Stephen Ierodiaconou</a> and dozens of other <a href="https://github.com/joeldrapper/literal/graphs/contributors">contributors</a>.',
 		},
 	},
 });
