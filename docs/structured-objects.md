@@ -14,6 +14,12 @@ end
 
 Both are marshallable, meaning they can be serialized and deserialized using Ruby’s built-in `Marshal` module.
 
+```ruby
+user = User.new(name: "Bob", age: 21)
+dump = Marshal.dump(user)
+bob = Marshal.load(dump)
+```
+
 ### Hash-like
 
 Both are hash-like, meaning they can be used in place of a hash in some cases. You can access their properties using the `[]` method. `Literal::Struct` also supports `[]=` to set properties.
