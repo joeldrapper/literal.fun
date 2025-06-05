@@ -56,7 +56,7 @@ _Constraint(Person, name: String)
 
 ## `_Constraint?(*T, **K)`
 
-`_Nilable(_Constraint?(*T, **K))`.
+`_Nilable(_Constraint(*T, **K))`.
 
 ## `_Date(*T, **K)`
 
